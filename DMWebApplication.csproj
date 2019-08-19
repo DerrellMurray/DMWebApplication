@@ -154,6 +154,7 @@
       <DependentUpon>Model1.edmx</DependentUpon>
     </Compile>
     <Compile Include="Models\Extended\User.cs" />
+    <Compile Include="Models\MailModels.cs" />
     <Compile Include="Models\MovieDB.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="User.cs">
@@ -165,13 +166,23 @@
     <Content Include="App_Data\Movies_log.ldf">
       <DependentUpon>Movies.mdf</DependentUpon>
     </Content>
+    <Content Include="Content\bg_1.jpg" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\desert.jpg" />
+    <Content Include="Content\DSC_0053.jpg" />
     <Content Include="Content\fontawesome\font-awesome.css" />
     <Content Include="Content\fontawesome\font-awesome.min.css" />
     <Content Include="Content\fonts\fontawesome-webfont.svg" />
+    <Content Include="Content\gallery-2-800.jpg" />
+    <Content Include="Content\gallery-3-800.jpg" />
+    <Content Include="Content\image_12.jpg" />
+    <Content Include="Content\image_4.jpg" />
+    <Content Include="Content\image_9.jpg" />
+    <Content Include="Content\surf.jpg" />
+    <Content Include="Content\water.jpg" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -199,6 +210,9 @@
     <Content Include="Content\fonts\fontawesome-webfont.woff" />
     <Content Include="Content\fonts\fontawesome-webfont.ttf" />
     <Content Include="Content\fonts\fontawesome-webfont.eot" />
+    <Content Include="Content\Derrell Murray Resume MS V3 DM2.pdf" />
+    <None Include="Properties\PublishProfiles\DerrellMurray - FTP.pubxml" />
+    <None Include="Properties\PublishProfiles\DerrellMurray - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />
@@ -232,6 +246,7 @@
     <Content Include="Views\Movies\Index.cshtml" />
     <Content Include="Views\Movies\IndexPrivate.cshtml" />
     <Content Include="Views\Movies\DetailsPrivate.cshtml" />
+    <Content Include="Views\Home\ThankYou.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Connected Services\" />
