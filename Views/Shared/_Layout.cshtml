@@ -5,65 +5,63 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@ViewBag.Title - My ASP.NET MVC Application</title>
     @Styles.Render("~/Content/css")
-    @Styles.Render("~/Content/fontawesome")
+    <!--Styles.Render("~/Content/font-awesome")-->
     @Scripts.Render("~/bundles/modernizr")
 
     <style>
-    .socialMediaLinks a {
-    font-size: 26px;
-    margin: 0 10px 0 0;
-    color: #000000;
-    text-decoration: none;
-    background: #b7b6b6;
-    padding: 5px;
-    width: 30px;
-    text-align: center;
-    border-radius: 50%;
-    }
+        .socialMediaLinks a {
+            font-size: 26px;
+            margin: 0 10px 0 0;
+            color: #000000;
+            text-decoration: none;
+            background: #b7b6b6;
+            padding: 5px;
+            width: 30px;
+            text-align: center;
+            border-radius: 50%;
+        }
 
-    /* The dots/bullets/indicators */
-    .dot {
-      height: 15px;
-      width: 15px;
-      margin: 0 2px;
-      background-color: #bbb;
-      border-radius: 50%;
-      display: inline-block;
-      transition: background-color 0.6s ease;
-    }
+        /* The dots/bullets/indicators */
+        .dot {
+            height: 15px;
+            width: 15px;
+            margin: 0 2px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.6s ease;
+        }
 
-    .active {
-         background-color: #717171;
-    }
+        .active {
+            background-color: #717171;
+        }
 
-    .content {
-      position: relative;
-    }
+        .content {
+            position: relative;
+        }
 
-    /* background: url('../../Content/gallery-2-800.jpg');*/
-    .content::after {
-      content: "";
-      background: url('../../Content/bg_1.jpg');
-      opacity: 0.5;
-      top: 0;
-      left: 0;
-      bottom: 0;
-      right: 0;
-      position: absolute;
-      z-index: -1;   
-    }
-    
-    .specialfont {
-        font-family:sans-serif;
-        font-size:18px;
-        font-weight:700;
+            /* background: url('../../Content/gallery-2-800.jpg');*/
+            .content::after {
+                content: "";
+                background: url('../../Content/bg_1.jpg');
+                opacity: 0.5;
+                top: 0;
+                left: 0;
+                bottom: 0;
+                right: 0;
+                position: absolute;
+                z-index: -1;
+            }
 
-    }
+        .specialfont {
+            font-family: sans-serif;
+            font-size: 18px;
+            font-weight: 700;
+        }
 
-    .mb-4{
-        margin-bottom: 2.0rem !important;
-    }
-
+        .mb-4 {
+            margin-bottom: 2.0rem !important;
+        }
     </style>
 
 </head>
@@ -83,7 +81,7 @@
                     <li>@Html.ActionLink("Home", "Index", "Home")</li>
                     <!--<li>@Html.ActionLink("Movies", "Index", "Movies/Index")</li>-->
                     <!--<li>@Html.ActionLink("Support", "IssueTracker", "Home")</li>-->
-                    <li>@Html.ActionLink("Resume","../Content/Derrell Murray Resume MS V3 DM2.pdf","Home")</li>
+                    <li>@Html.ActionLink("Resume", "../Content/Derrell Murray Resume MS V3 DM2.pdf", "Home")</li>
                     <li>@Html.ActionLink("About", "About", "Home")</li>
                     <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
                 </ul>
@@ -109,5 +107,24 @@
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
     @RenderSection("scripts", required: false)
+
+    <!--
+    <script src="~/Scripts/jquery-3.3.1.js" type="text/javascript"></script>
+    -->
+    <script language="javascript">
+
+        var fullHeight = function () {
+            $('.js-fullheight').css('height', $(window).height());
+            $(window).resize(function () {
+                $('.js-fullheight').css('height', $(window).height());
+            });
+
+        };
+        fullHeight();
+
+
+
+    </script>
+
 </body>
 </html>

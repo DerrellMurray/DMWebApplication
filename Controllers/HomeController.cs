@@ -61,6 +61,7 @@ namespace DMWebApplication.Controllers
                 var tEmail = new Thread(() =>
                SendEmail(toAddress, fromAddress, subject, message));
                 tEmail.Start();
+               // ViewBag.Message = "Thank you for contacting me.  I will get back to you as soon as possible.";
                 return View("ThankYou");
             }
             return View(e);
@@ -95,13 +96,12 @@ namespace DMWebApplication.Controllers
 
                     try
                     {
-                        using (var smtpClient = new SmtpClient(
-                                                         "smtp.mail.yahoo.com", 465))
+                        using (var smtpClient = new SmtpClient("smtp.mail.yahoo.com", 465))
                         {
                             smtpClient.EnableSsl = true;
                             smtpClient.UseDefaultCredentials = false;
                             smtpClient.Credentials = loginInfo;
-//                            smtpClient.Send(mail);
+                            smtpClient.Send(mail);
                         }
 
                     }

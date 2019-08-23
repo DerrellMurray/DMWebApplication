@@ -12,7 +12,7 @@ namespace DMWebApplication.Controllers
 {
     public class MoviesController : Controller
     {
-        private MovieDBContext db = new MovieDBContext();
+        private readonly MovieDBContext db = new MovieDBContext();
 
         // GET: Movies
         public ActionResult Index()
